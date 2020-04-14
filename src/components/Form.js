@@ -74,12 +74,12 @@ class Form extends Component {
                 <div className='formElem'>
                     <input name='cost' type='number' onChange={this.handleChange} value={this.state.cost} className='textfield' />
                     <p className='error'>{this.state.errors.cost}</p>
-                    <label htmlFor='cost'>Cost</label>
+                    <label htmlFor='cost'>Initial Share Price</label>
                 </div>
                 <div className='formElem'>
                     <input name='sell_price' type='number' onChange={this.handleChange} value={this.state.sell_price} className='textfield' />
                     <p className='error'>{this.state.errors.sell_price}</p>
-                    <label htmlFor='sell_price'>Sell Price</label>
+                    <label htmlFor='sell_price'>Final Share Price</label>
                 </div>
                 <div className='formElem'>
                     <input name='buy_commission' type='number' onChange={this.handleChange} value={this.state.buy_commission} className='textfield' />
@@ -94,7 +94,7 @@ class Form extends Component {
                 <div className='formElem'>
                     <input name='tax' type='number' onChange={this.handleChange} value={this.state.tax} className='textfield' />
                     <p className='error'>{this.state.errors.tax}</p>
-                    <label htmlFor='tax'>Tax</label>
+                    <label htmlFor='tax'>Capital Gain Tax Rate</label>
                 </div>
                 <div className='formElem'>
                     <input type='button' onClick={this.handleSubmit} className='Button' value='Submit'/>
